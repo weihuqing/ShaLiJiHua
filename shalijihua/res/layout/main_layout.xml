@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/tab_bar" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tab_layout"
+            android:background="@color/white" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/main_title"
@@ -10,7 +30,7 @@
         android:layout_height="50dip"
         android:background="@color/transparent" >
 
-        <TextView
+        <org.holoeverywhere.widget.TextView
             android:id="@+id/cash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +41,7 @@
             android:textColor="@color/red"
             android:textSize="20sp" />
 
-        <TextView
+        <org.holoeverywhere.widget.TextView
             android:id="@+id/recharge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,19 +54,4 @@
             android:textSize="20sp" />
     </RelativeLayout>
 
-    <include
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        layout="@layout/tab_bar" />
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/tab_layout"
-        android:background="@color/white" >
-    </android.support.v4.view.ViewPager>
-
-</RelativeLayout>
+</FrameLayout>

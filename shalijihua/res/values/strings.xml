@@ -1,11 +1,11 @@
 <resources>
 
-    <string name="app_name">shalijihua</string>
+    <string name="app_name">沙砾计划</string>
     <string name="img_miss">找不到图片了！</string>
-    <string name="tab_zonglan">账户总览</string>
-    <string name="tab_text2">账户记录</string>
-    <string name="tab_text3">数据中心</string>
-    <string name="tab_text4">安全中心</string>
+    <string name="tab_zhanghuzonglan">账户总览</string>
+    <string name="tab_zhanghujilu">账户记录</string>
+    <string name="tab_shujuzhongxin">数据中心</string>
+    <string name="tab_anquanzhongxin">安全中心</string>
     <string name="title_cash">提现</string>
     <string name="title_recharge">充值</string>
     <string name="title">标题栏</string>
